@@ -1,0 +1,20 @@
+# [운영체제 및 도구 설정]
+.DS_Store          # macOS 시스템 파일
+Thumbs.db          # Windows 미리보기 캐시
+.vscode/           # VS Code 개인 설정 (팀 공통 설정이 아닐 경우)
+*.log              # 모든 로그 파일
+
+# [의존성 라이브러리] - 용량이 크고 재설치가 가능하므로 제외
+node_modules/      # Node.js
+venv/              # Python 가상환경
+.pnpm-store/       # pnpm
+
+# [빌드 결과물] - 소스코드로 생성 가능한 파일은 제외
+/build/
+/dist/
+/out/
+*.exe
+
+# [보안/환경 설정] - 절대 GitHub에 올리면 안 되는 정보
+secrets.json       # 비밀 키 파일
+
